@@ -1,35 +1,35 @@
 <?php
 
+namespace MultiPayment\Gateways;
+
 class PaymentGateway
 {
-    private $stripeKey;
-    private $stripeSecret;
-    private $paypalClientId;
-    private $paypalClientSecret;
+    protected array $config;
 
-    public function __construct($config)
+    public function __construct(array $config)
     {
-        $this->stripeKey = $config['stripe_key'];
-        $this->stripeSecret = $config['stripe_secret'];
-        $this->paypalClientId = $config['paypal_client_id'];
-        $this->paypalClientSecret = $config['paypal_client_secret'];
+        $this->config = $config;
     }
 
-    public function processStripePayment($amount)
+    public function process(string $provider, float $amount): string
     {
-        if (empty($this->stripeSecret)) {
-            return "Stripe keys not configured.";
+        switch ($provider) {
+            case 'stripe':
+                return $this->processStripe($amount);
+            case 'paypal':
+                return $this->processPayPal($amount);
+            default:
+                throw new \Exception("Unsupported payment provider.");
         }
-
-        return "Stripe payment initialized for $" . $amount;
     }
 
-    public function processPayPalPayment($amount)
+    protected function processStripe(float $amount): string
     {
-        if (empty($this->paypalClientSecret)) {
-            return "PayPal keys not configured.";
-        }
+        return "Processing $$amount via Stripe...";
+    }
 
-        return "PayPal payment initialized for $" . $amount;
+    protected function processPayPal(float $amount): string
+    {
+        return "Processing $$amount via PayPal...";
     }
 }
