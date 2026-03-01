@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/mohamedjadla/multi-payment/main/.github/assets/banner.png" width="100%" />
+  <img src="https://raw.githubusercontent.com/mohamedjadla/multi-payment/main/banner.png" />
 </p>
 
 <h1 align="center">💳 Multi Payment Gateway</h1>
@@ -14,12 +14,20 @@
 </p>
 
 <p align="center">
-  A production-ready, extensible multi payment gateway built with modern PHP architecture.
+  A modern, production-ready and extensible multi payment gateway built with clean PHP architecture.
 </p>
 
 ---
 
-## 🚀 Supported Payment Providers
+## 🚀 Overview
+
+Multi Payment Gateway is a lightweight PHP library designed to provide a clean and extensible structure for integrating multiple payment providers into your application.
+
+It follows modern PHP standards and is fully Composer-ready.
+
+---
+
+## 💳 Supported Payment Providers
 
 <p align="center">
   <img src="https://cdn.worldvectorlogo.com/logos/stripe-4.svg" width="120" />
@@ -27,9 +35,32 @@
   <img src="https://cdn.worldvectorlogo.com/logos/paypal-3.svg" width="120" />
 </p>
 
-- ✔ Stripe Integration (Official SDK)
-- ✔ PayPal Ready Structure
-- ✔ Clean & Extensible Architecture
+- ✅ Stripe (Official SDK Integration)
+- ✅ PayPal (Structure Ready)
+- 🔜 Easily extendable to other gateways
+
+---
+
+## ✨ Features
+
+- PSR-4 Autoloading
+- Clean OOP Architecture
+- Service-based Gateway Structure
+- Custom Exception Handling
+- Environment-based configuration
+- Production-friendly design
+- CI Ready
+- Semantic Versioning
+
+---
+
+## 📦 Installation
+
+Install via Composer:
+
+```bash
+composer require mohamedjadla/multi-payment
+
 
 ---
 
