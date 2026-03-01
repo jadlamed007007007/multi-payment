@@ -1,0 +1,12 @@
+{
+    "name": "MohamedJadla/multi-payment",
+    "description": "Lightweight multi payment gateway in PHP",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "MultiPayment\\": "src/"
+        }
+    },
+    "require": {}
+}
