@@ -1,5 +1,5 @@
 {
-    "name": "MohamedJadla/multi-payment",
+    "name": "mohamedjadla/multi-payment",
     "description": "Lightweight multi payment gateway in PHP",
     "type": "library",
     "license": "MIT",
@@ -8,5 +8,7 @@
             "MultiPayment\\": "src/"
         }
     },
-    "require": {}
+    "require": {
+        "php": ">=8.0"
+    }
 }
