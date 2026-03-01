@@ -1,8 +1,4 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/mohamedjadla/multi-payment/main/banner.png" />
-</p>
-
-<p align="center">
   <img src="https://raw.githubusercontent.com/mohamedjadla/multi-payment/main/.github/assets/banner.png" width="100%" />
 </p>
 
