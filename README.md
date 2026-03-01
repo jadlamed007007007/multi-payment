@@ -1,5 +1,12 @@
 # 💳 Multi Payment Gateway
 
+![Version](https://img.shields.io/packagist/v/mohamedjadla/multi-payment)
+![Downloads](https://img.shields.io/packagist/dt/mohamedjadla/multi-payment)
+![License](https://img.shields.io/packagist/l/mohamedjadla/multi-payment)
+![Build](https://img.shields.io/github/actions/workflow/status/mohamedjadla/multi-payment/ci.yml)
+
+# 💳 Multi Payment Gateway
+
 ![PHP](https://img.shields.io/badge/PHP-8.x-blue)
 ![Status](https://img.shields.io/badge/Build-Stable-brightgreen)
 ![License](https://img.shields.io/badge/License-MIT-green)
