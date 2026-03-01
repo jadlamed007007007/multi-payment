@@ -15,15 +15,20 @@
 
 ---
 
-## 💳 Supported Payments
+## 💳 Supported Payment Providers
 
 <p align="center">
-  <img src="https://cdn.worldvectorlogo.com/logos/visa-10.svg" width="90" alt="Visa">
+  <img src="https://cdn.worldvectorlogo.com/logos/stripe-4.svg" width="110" alt="Stripe">
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="https://cdn.worldvectorlogo.com/logos/mastercard-2.svg" width="90" alt="Mastercard">
+  <img src="https://cdn.worldvectorlogo.com/logos/paypal-3.svg" width="110" alt="PayPal">
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.worldvectorlogo.com/logos/visa-10.svg" width="110" alt="Visa">
 </p>
 
-Supports card processing via integrated payment providers such as Stripe and PayPal.
+- ✅ Stripe (Official SDK Integration)
+- ✅ PayPal (Structure Ready)
+- ✅ Card Payments (Visa Supported)
+- 🔜 Easily extendable to additional gateways
 
 ---
 
@@ -54,6 +59,7 @@ Install via Composer:
 
 ```bash
 composer require mohamedjadla/multi-payment
+
 
 
 
