@@ -1,8 +1,4 @@
-<p align="center">
-  <img src="banner.png" alt="Multi Payment Gateway Banner" width="100%">
-</p>
-
-<h1 align="center">💳 Multi Payment Gateway</h1>
+# 💳 Multi Payment Gateway
 
 <p align="center">
   <a href="https://packagist.org/packages/mohamedjadla/multi-payment">
@@ -19,25 +15,23 @@
 
 ---
 
-## 🚀 Overview
+## 💳 Supported Payments
 
-Multi Payment Gateway is a lightweight PHP library designed to integrate multiple payment providers using a clean and scalable architecture.
+<p align="center">
+  <img src="https://cdn.worldvectorlogo.com/logos/visa-10.svg" width="90" alt="Visa">
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.worldvectorlogo.com/logos/mastercard-2.svg" width="90" alt="Mastercard">
+</p>
 
-Built for developers who want flexibility, simplicity, and production-grade structure.
+Supports card processing via integrated payment providers such as Stripe and PayPal.
 
 ---
 
-## 💳 Supported Payment Providers
+## 🚀 Overview
 
-<p align="center">
-  <img src="https://cdn.worldvectorlogo.com/logos/stripe-4.svg" width="120" alt="Stripe">
-  &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="https://cdn.worldvectorlogo.com/logos/paypal-3.svg" width="120" alt="PayPal">
-</p>
+Multi Payment Gateway is a lightweight PHP library designed to integrate multiple payment providers using a scalable and extensible architecture.
 
-- ✅ Stripe (Official SDK Integration)
-- ✅ PayPal (Structure Ready)
-- 🔜 Easily extendable to additional gateways
+Built with modern PHP standards and fully Composer-ready.
 
 ---
 
@@ -45,12 +39,12 @@ Built for developers who want flexibility, simplicity, and production-grade stru
 
 - PSR-4 Autoloading
 - Clean OOP Architecture
-- Strategy Pattern Gateway Structure
+- Strategy Pattern Implementation
+- Gateway Abstraction Layer
 - Custom Exception Handling
-- Environment-based configuration
+- Secure Configuration Support
 - CI/CD Ready
 - Semantic Versioning
-- Production-friendly structure
 
 ---
 
@@ -60,5 +54,6 @@ Install via Composer:
 
 ```bash
 composer require mohamedjadla/multi-payment
+
 
 
