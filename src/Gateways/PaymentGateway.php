@@ -2,6 +2,8 @@
 
 namespace MultiPayment\Gateways;
 
+use MultiPayment\Exceptions\PaymentException;
+
 class PaymentGateway
 {
     protected array $config;
@@ -15,21 +17,15 @@ class PaymentGateway
     {
         switch ($provider) {
             case 'stripe':
-                return $this->processStripe($amount);
-            case 'paypal':
-                return $this->processPayPal($amount);
+                if (!isset($this->config['stripe_secret'])) {
+                    throw new PaymentException("Stripe secret key not configured.");
+                }
+
+                $stripe = new StripeGateway($this->config['stripe_secret']);
+                return $stripe->charge($amount);
+
             default:
-                throw new \Exception("Unsupported payment provider.");
+                throw new PaymentException("Unsupported payment provider.");
         }
-    }
-
-    protected function processStripe(float $amount): string
-    {
-        return "Processing $$amount via Stripe...";
-    }
-
-    protected function processPayPal(float $amount): string
-    {
-        return "Processing $$amount via PayPal...";
     }
 }
