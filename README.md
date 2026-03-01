@@ -25,6 +25,20 @@
 - Production-friendly structure
 
 ---
+## 🚀 Usage Example
+
+```php
+require 'vendor/autoload.php';
+
+use MultiPayment\Gateways\PaymentGateway;
+
+$config = [
+    'stripe_secret' => 'sk_test_xxxxx'
+];
+
+$gateway = new PaymentGateway($config);
+
+echo $gateway->process('stripe', 100);
 
 ## 📂 Project Structure
 
