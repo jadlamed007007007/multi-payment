@@ -1,16 +1,16 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/mohamedjadla/multi-payment/main/banner.png" />
+  <img src="banner.png" alt="Multi Payment Gateway Banner" width="100%">
 </p>
 
 <h1 align="center">💳 Multi Payment Gateway</h1>
 
 <p align="center">
   <a href="https://packagist.org/packages/mohamedjadla/multi-payment">
-    <img src="https://img.shields.io/packagist/v/mohamedjadla/multi-payment" />
+    <img src="https://img.shields.io/packagist/v/mohamedjadla/multi-payment" alt="Version">
   </a>
-  <img src="https://img.shields.io/packagist/dt/mohamedjadla/multi-payment" />
-  <img src="https://img.shields.io/packagist/l/mohamedjadla/multi-payment" />
-  <img src="https://github.com/mohamedjadla/multi-payment/actions/workflows/ci.yml/badge.svg" />
+  <img src="https://img.shields.io/packagist/dt/mohamedjadla/multi-payment" alt="Downloads">
+  <img src="https://img.shields.io/packagist/l/mohamedjadla/multi-payment" alt="License">
+  <img src="https://github.com/mohamedjadla/multi-payment/actions/workflows/ci.yml/badge.svg" alt="Build">
 </p>
 
 <p align="center">
@@ -21,23 +21,23 @@
 
 ## 🚀 Overview
 
-Multi Payment Gateway is a lightweight PHP library designed to provide a clean and extensible structure for integrating multiple payment providers into your application.
+Multi Payment Gateway is a lightweight PHP library designed to integrate multiple payment providers using a clean and scalable architecture.
 
-It follows modern PHP standards and is fully Composer-ready.
+Built for developers who want flexibility, simplicity, and production-grade structure.
 
 ---
 
 ## 💳 Supported Payment Providers
 
 <p align="center">
-  <img src="https://cdn.worldvectorlogo.com/logos/stripe-4.svg" width="120" />
+  <img src="https://cdn.worldvectorlogo.com/logos/stripe-4.svg" width="120" alt="Stripe">
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="https://cdn.worldvectorlogo.com/logos/paypal-3.svg" width="120" />
+  <img src="https://cdn.worldvectorlogo.com/logos/paypal-3.svg" width="120" alt="PayPal">
 </p>
 
 - ✅ Stripe (Official SDK Integration)
 - ✅ PayPal (Structure Ready)
-- 🔜 Easily extendable to other gateways
+- 🔜 Easily extendable to additional gateways
 
 ---
 
@@ -45,12 +45,12 @@ It follows modern PHP standards and is fully Composer-ready.
 
 - PSR-4 Autoloading
 - Clean OOP Architecture
-- Service-based Gateway Structure
+- Strategy Pattern Gateway Structure
 - Custom Exception Handling
 - Environment-based configuration
-- Production-friendly design
-- CI Ready
+- CI/CD Ready
 - Semantic Versioning
+- Production-friendly structure
 
 ---
 
@@ -61,11 +61,4 @@ Install via Composer:
 ```bash
 composer require mohamedjadla/multi-payment
 
-
----
-
-## 📦 Installation
-
-```bash
-composer require mohamedjadla/multi-payment
 
